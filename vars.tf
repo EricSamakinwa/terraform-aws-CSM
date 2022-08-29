@@ -10,7 +10,7 @@ variable AMIS {
     ap-south-1 = "ami-009110a2bf8d7dd0a"
   }
 }
-
+# Create keys with ssh-keygen
 variable PRIV_KEY_PATH {
   default = "vprofilekey"
 }
