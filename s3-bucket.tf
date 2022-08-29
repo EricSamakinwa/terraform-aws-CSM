@@ -6,9 +6,14 @@
 
 terraform {
     backend "s3" {
-    key = "terraform/backend"
-    region = "us-east-1"
-    }
+        # Give bucket name
+        bucket = "proj1-csm"
+        # Name of directory in the bucket (terraform)
+        # and a file name to maintain the state (backend)
+        key = "terraform/backend"
+        # Region 
+        region = "us-east-1"
+       }
 }
 
 
